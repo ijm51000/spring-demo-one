@@ -24,4 +24,12 @@ public class TrackCoach implements Coach {
 		return "Custom start message and " + fortuneService.getFortune();
 	}
 
+	// add an init method
+	public void doStartupStuff() {
+		System.out.println("TrackCoach: Inside startup method");
+	}
+	// add a destroy method
+	public void doCleanupStuff() {
+		System.out.println("TrackCoach: Inside cleanup method");
+	}
 }
